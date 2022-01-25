@@ -34,7 +34,7 @@ h1
     margin: 3rem 0;
     background-color: var(--black);
     border-radius: 50px;
-    min-width: 45vh;
+    min-width: 35vh;
     height: 50vw;
 }
 
@@ -93,6 +93,37 @@ h1
     padding-left: 0;
 }
 
+/* piano keys */
+.piano-instrument
+{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.key 
+{
+    background-color: var(--red);
+}
+
+.white 
+{
+    width: 6vh;
+    height: 80%;
+    background-color: var(--white);    
+    border: 3px solid var(--black);
+}
+
+.black 
+{
+    width: 3vh;
+    height: 60%;
+    background-color: var(--black);
+    margin-left: -2vh;
+    margin-right: -2vh;
+    z-index: 2;
+}
+    
 @media (min-width:640px){
 
 h1
@@ -106,7 +137,7 @@ h1
 }
 .container-piano, .lesson-video
 {
-    min-width: 70vh;
+    min-width: 80vh;
     height: 30vw;
 }
 
@@ -141,9 +172,40 @@ h1
     font-size: 1.5rem;
     padding: 1.5rem 0 7rem 0;
 }
+
+/* piano keys */
+.piano-instrument
+{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.key 
+{
+    background-color: var(--red);
+}
+
+.white 
+{
+    width: 9vh;
+    height: 80%;
+    background-color: var(--white);    
+    border: 3px solid var(--black);
+}
+
+.black 
+{
+    width: 6vh;
+    height: 60%;
+    background-color: var(--black);
+    margin-left: -3vh;
+    margin-right: -3vh;
+    z-index: 2;
+}
     
 }
-@media (min-width: 768px){
+@media (min-width: 766px){
 .container-parts
 {
     padding-left: 5rem;
@@ -194,6 +256,36 @@ h1
     padding: 2rem 0;
     font-size: 1.5rem;
     padding-left: 5rem;
+}
+/* piano keys */
+.piano-instrument
+{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.key 
+{
+    background-color: var(--red);
+}
+
+.white 
+{
+    width: 12vh;
+    height: 80%;
+    background-color: var(--white);    
+    border: 3px solid var(--black);
+}
+
+.black 
+{
+    width: 7vh;
+    height: 60%;
+    background-color: var(--black);
+    margin-left: -5vh;
+    margin-right: -5vh;
+    z-index: 2;
 }
 }
 @media (min-width:1024px){
@@ -248,6 +340,36 @@ h1
     padding: 2rem 0;
     font-size: 1.5rem;
 }
+/* piano keys */
+.piano-instrument
+{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.key 
+{
+    background-color: var(--red);
+}
+
+.white 
+{
+    width: 15vh;
+    height: 80%;
+    background-color: var(--white);    
+    border: 3px solid var(--black);
+}
+
+.black 
+{
+    width: 8vh;
+    height: 60%;
+    background-color: var(--black);
+    margin-left: -5vh;
+    margin-right: -5vh;
+    z-index: 2;
+}
 }
 
 @media (min-width:1280px){
@@ -265,7 +387,7 @@ h1
 {
     margin: 5rem 0;
     min-width: 150vh;
-    --height: 30vw;
+    height: 30vw;
 }
 
 .big-box
@@ -307,30 +429,29 @@ h1
 {
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 
 .key 
 {
-    height: calc(var(--width) * 4);
-    width: var(--width);
-    cursor: pointer;
+    background-color: var(--red);
 }
 
 .white 
 {
-    --width: 120px;
-    height: 25vw;
+    width: 15vh;
+    height: 80%;
     background-color: var(--white);    
-    border: 2px solid var(--black);
+    border: 3px solid var(--black);
 }
 
 .black 
 {
-    --width: 80px;
-    height: 15svw;
+    width: 10vh;
+    height: 60%;
     background-color: var(--black);
-    margin-left: calc(var(--width) / -2);
-    margin-right: calc(var(--width) / -2);
+    margin-left: -5vh;
+    margin-right: -5vh;
     z-index: 2;
 }
 }
