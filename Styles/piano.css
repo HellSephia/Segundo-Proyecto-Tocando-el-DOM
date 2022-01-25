@@ -100,11 +100,6 @@ h1
     height: 100%;
 }
 
-.key 
-{
-    background-color: var(--red);
-}
-
 .white 
 {
     width: 6vh;
@@ -178,11 +173,6 @@ h1
     display: flex;
     justify-content: center;
     height: 100%;
-}
-
-.key 
-{
-    background-color: var(--red);
 }
 
 .white 
@@ -264,10 +254,6 @@ h1
     height: 100%;
 }
 
-.key 
-{
-    background-color: var(--red);
-}
 
 .white 
 {
@@ -347,11 +333,6 @@ h1
     height: 100%;
 }
 
-.key 
-{
-    background-color: var(--red);
-}
-
 .white 
 {
     width: 15vh;
@@ -429,11 +410,6 @@ h1
     display: flex;
     justify-content: center;
     height: 100%;
-}
-
-.key 
-{
-    background-color: var(--red);
 }
 
 .white 
