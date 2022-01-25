@@ -4,19 +4,15 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    outline: 1px solid red ;
+    box-sizing: border-box;
 }
 /*--------------Main------------------*/
 
-.container-parts
-{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-}
 h1
 {
     font-family: 'Roboto Slab', serif;
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--red);
     text-align: center;
     font-weight: 900;
@@ -26,6 +22,7 @@ h1
 .first-container
 {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,37 +34,8 @@ h1
     margin: 3rem 0;
     background-color: var(--black);
     border-radius: 50px;
-    min-width: 300px;
-    min-height: 300px;
-}
-
-.piano-instrument
-{
-    display: flex;
-    justify-content: center;
-}
-
-.key 
-{
-    height: calc(var(--width) * 4);
-    width: var(--width);
-    cursor: pointer;
-}
-
-.white 
-{
-    --width: 100px;
-    background-color: var(--white);    
-    border: 2px solid var(--black);
-}
-
-.black 
-{
-    --width: 60px;
-    background-color: var(--black);
-    margin-left: calc(var(--width) / -2);
-    margin-right: calc(var(--width) / -2);
-    z-index: 2;
+    min-width: 45vh;
+    height: 50vw;
 }
 
 .big-box
@@ -112,24 +80,20 @@ h1
 .lesson-video
 {
     padding: 2rem 0;
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 10vh;
+    height: 50vw;
 }
 
-footer
+.piano-footer
 {
     text-align: center;
     padding: 1.5rem 0 7rem 0;
     font-size: 1.2rem;
     font-weight: 600;
+    padding-left: 0;
 }
 
 @media (min-width:640px){
-
-footer, .container-parts
-{
-    padding-left: 5rem;
-}
 
 h1
 {
@@ -142,7 +106,7 @@ h1
 }
 .container-piano, .lesson-video
 {
-    width: 80vh;
+    min-width: 70vh;
     height: 30vw;
 }
 
@@ -171,17 +135,70 @@ h1
     height: 35vw;
 }
 
-footer
+.piano-footer
 {
     padding: 2rem 0;
     font-size: 1.5rem;
+    padding: 1.5rem 0 7rem 0;
 }
     
 }
+@media (min-width: 768px){
+.container-parts
+{
+    padding-left: 5rem;
+}
+.container-piano, .lesson-video
+{
+    min-width: 90vh;
+    height: 30vw;
+}
 
+h1
+{
+    font-size: 3rem;
+}
+
+.first-container
+{
+    padding-top: 1rem;
+}
+
+.big-box
+{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.box h2
+{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+}
+.box p
+{
+    font-size: 1.5rem;
+}
+.container-last
+{
+    padding-top: 1rem;
+}
+
+.lesson-video
+{
+    width: 80vh;
+    height: 35vw;
+}
+
+.piano-footer
+{
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    padding-left: 5rem;
+}
+}
 @media (min-width:1024px){
 
-footer, .container-parts
+.piano-footer, .container-parts
 {
     padding-left: 7rem;
 }
@@ -197,7 +214,7 @@ h1
 }
 .container-piano, .lesson-video
 {
-    width: 60vh;
+    min-width: 110vh;
     height: 30vw;
 }
 
@@ -226,18 +243,18 @@ h1
     height: 35vw;
 }
 
-footer
+.piano-footer
 {
     padding: 2rem 0;
     font-size: 1.5rem;
 }
 }
 
-@media (min-width:1440px){
+@media (min-width:1280px){
 
 .container-parts
 {
-    padding-left: 8rem;
+    padding-left: 5rem;
 }
 h1
 {
@@ -247,8 +264,8 @@ h1
 .container-piano
 {
     margin: 5rem 0;
-    width: 130vh;
-    height: 30vw;
+    min-width: 150vh;
+    --height: 30vw;
 }
 
 .big-box
@@ -265,7 +282,7 @@ h1
 }
 .box p
 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 2rem 1rem;
 }
 
@@ -279,10 +296,41 @@ h1
     height: 30vw;
 }
 
-footer
+.piano-footer
 {
     padding-left: 4.5rem;
     padding-bottom: 2rem;
     font-size: 1.5rem;
+}
+/* Piano keys */
+.piano-instrument
+{
+    display: flex;
+    justify-content: center;
+}
+
+.key 
+{
+    height: calc(var(--width) * 4);
+    width: var(--width);
+    cursor: pointer;
+}
+
+.white 
+{
+    --width: 120px;
+    height: 25vw;
+    background-color: var(--white);    
+    border: 2px solid var(--black);
+}
+
+.black 
+{
+    --width: 80px;
+    height: 15svw;
+    background-color: var(--black);
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 2;
 }
 }

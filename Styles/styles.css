@@ -56,8 +56,7 @@ body
     filter:contrast(10%) sepia(1) hue-rotate(-40deg) saturate(1000%);
 }
 
-@media (min-width:640px){
-
+@media (min-width:768px){
 .grid-container 
 {
     position: fixed;
@@ -75,7 +74,7 @@ body
 
 .grid-container a img 
 {
-    max-width: 40px;
+    max-width: 50px;
 }
 
 .item5 
@@ -198,7 +197,7 @@ padding: 1rem;
     color: var(--black);
 }
 
-footer 
+.copyrights
 {
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
