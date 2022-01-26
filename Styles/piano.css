@@ -117,7 +117,14 @@ h1
     margin-right: -2vh;
     z-index: 2;
 }
-    
+.white:active
+{
+    background-color: rgb(230, 230, 230);
+}
+.black:active
+{
+    background-color: rgb(63, 63, 63);
+}  
 @media (min-width:640px){
 
 h1
@@ -179,7 +186,6 @@ h1
 {
     width: 9vh;
     height: 80%;
-    background-color: var(--white);    
     border: 3px solid var(--black);
 }
 
@@ -187,7 +193,6 @@ h1
 {
     width: 6vh;
     height: 60%;
-    background-color: var(--black);
     margin-left: -3vh;
     margin-right: -3vh;
     z-index: 2;
@@ -336,8 +341,7 @@ h1
 .white 
 {
     width: 15vh;
-    height: 80%;
-    background-color: var(--white);    
+    height: 80%; 
     border: 3px solid var(--black);
 }
 
@@ -345,7 +349,6 @@ h1
 {
     width: 8vh;
     height: 60%;
-    background-color: var(--black);
     margin-left: -5vh;
     margin-right: -5vh;
     z-index: 2;
@@ -415,8 +418,7 @@ h1
 .white 
 {
     width: 15vh;
-    height: 80%;
-    background-color: var(--white);    
+    height: 80%; 
     border: 3px solid var(--black);
 }
 
@@ -424,9 +426,9 @@ h1
 {
     width: 10vh;
     height: 60%;
-    background-color: var(--black);
     margin-left: -5vh;
     margin-right: -5vh;
     z-index: 2;
 }
+
 }
